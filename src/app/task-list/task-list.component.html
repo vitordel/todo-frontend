@@ -1,0 +1,6 @@
+<ul>
+  <li *ngFor="let task of tasks">
+    {{ task.description }}
+    <button (click)="completeTask(task.id)">Concluir</button>
+  </li>
+</ul>
